@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    max-width: 1440px;   
+}
+.container {
+    background: url("/Desert.jpg") no-repeat center center/cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .title {
+    background-color: teal;
+    padding: 10px;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 2.5px solid white;
+}
+.main-container {
+    background-color: white;
+    width: 27rem;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    text-align: center;
+}
+.quote-area .quote {
+    font-size: 1.2rem;
+    padding: 0 2rem ;
+}
+.main-container .person{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: red;
+    box-shadow: 0 0 10px;
+}
+.button-area {
+    width: 7.5rem;
+    background-color: teal;
+    align-self: center;
+    border-radius: 5px;
+}
+.button-area .btn {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    padding: 6px 0;
+    color: white;
+    box-shadow: 0 0 10px;
+    border: none;
+}
+.button-area .btn:hover {
+    cursor: pointer;
+}
+
+
+            /* RESPONSIVENESS */
+@media screen and (max-width:700px) {
+    .main-container {
+        width: 17rem;
+        
+    }
+    .quote-area .quote {
+        font-size: 1.2rem;
+        padding: 2rem ;
+    }
+    .main-container .person{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .button-area {
+        margin-bottom: 1rem;
+        font-size: 10px;
+        width: 7rem;
+        
+    }
+
+}
